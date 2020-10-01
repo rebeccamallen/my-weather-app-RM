@@ -2,12 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        hello git
-    </h1>
+<div class="container">
+    <div class="card" style="width: 27rem;">
+        <div class="card-body">
+          <span class="search" >
+          <h6 class="card-title">
+            <form id="search-form">
+             <input type="text" placeholder="search for your city" id="search-input" />
+            </form>
+            </h6>
+          <div class="twoButtons">
+            <span class="search" id="search-button">
+            <a href="#" class="btn btn-primary">Search</a>
+           </span>
+            <span class="current" id="current-button">
+                <a href="#" class="btn btn-success">Current</a>
+            </span>
+          </span>
+        </div>
+          <br />
+          <br>
+            <h1 class="card-subtitle mb-2 text-muted">Los Angeles </h1>
+            <div class="floatLeft">
+                <span class="weatherNumber" id="temp">19</span>
+                <!-- <span class="units">
+                    <a href="#" id="celcius-link">°C</a> | -->
+                    <a href="#" class= "degF" id="fahrenheit-link">°F</a>
+                </span> 
+            </div>
+            <p class= "dayTime" id="funnyTime"> 
+               Monday 6:47 
+            </p>
+            <p class="card-text">
+            <!-- <div class="row">
+                <div class="col-4">
+                    Monday Tuesday Wednesday Thursday Friday Saturday Sunday
+                </div>
+                <div class="col-2">
+                    71°F 71°F 73°F 75°F 76°F 80°F 85°F
+                </div>
+                <div class="col-1">
+                    🌤 🌤 🌤 ☀️ ☀️ ☀️ ☀️
+                </div>
+            </div> -->
+            </p>
+        </div>
+    </div>
+    <script src="index2.js"></script>
+</div>
 </body>
 </html>
